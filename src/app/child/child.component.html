@@ -1,0 +1,15 @@
+<h2>Inside Child Component</h2>
+<h2 *ngIf="flag; then ifPart else elsePart"></h2>
+
+<ng-template #ifPart>
+    <h3 [style.color]="'green'">Given number : {{num}} is not Prime</h3> 
+</ng-template>
+
+<ng-template #elsePart>
+    <h3 [style.color]="'red'">Given number : {{num}} is Prime</h3>
+</ng-template>
+
+
+<h3 [style.color]="'indigo'">
+    Given "{{name}}" contain Capital Letters count is : {{count}}
+</h3>
